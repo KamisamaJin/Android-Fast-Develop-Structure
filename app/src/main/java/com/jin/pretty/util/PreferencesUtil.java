@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
  * Created by Jin on 1/8/15.
  */
 public final class PreferencesUtil {
-    private static final String FILE_NAME = "";
+    private static final String FILE_NAME = "com.jin.pretty";
 
     public static void saveData(Context context, String key, Object data) {
         String type = data.getClass().getSimpleName();

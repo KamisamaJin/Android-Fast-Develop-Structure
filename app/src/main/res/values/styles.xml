@@ -18,6 +18,6 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Common"/>
-    
+
     <style name="Common.ProgressBar" parent="@android:style/Widget.ProgressBar.Small"></style>
 </resources>

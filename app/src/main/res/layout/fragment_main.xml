@@ -1,4 +1,5 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
@@ -11,10 +12,23 @@
         tools:context="com.jin.pretty.MainActivityFragment"
         tools:showIn="@layout/activity_main">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!" />
+        <com.jin.pretty.widget.roundimageview.RoundImageView
+            android:id="@+id/imageView1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            app:imageType="corner_image"
+            app:borderColor="@color/colorPrimary"
+            app:border="0.5dp"
+            app:cornerRadius="5dp"/>
 
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageView"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY" />
     </RelativeLayout>
 </layout>

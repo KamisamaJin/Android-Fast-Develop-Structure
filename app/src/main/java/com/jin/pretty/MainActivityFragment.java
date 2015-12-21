@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.jin.pretty.databinding.FragmentMainBinding;
 
 /**
  * A placeholder fragment containing a simple view.
  */
 public class MainActivityFragment extends BaseFragment {
-
+    FragmentMainBinding mBinding;
 
     public MainActivityFragment() {
     }
@@ -26,7 +29,8 @@ public class MainActivityFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getDataBinding();
+        mBinding = getDataBinding();
+        //mBinding.imageView1.setScaleType(ImageView.ScaleType.FIT_XY);
     }
 
 }

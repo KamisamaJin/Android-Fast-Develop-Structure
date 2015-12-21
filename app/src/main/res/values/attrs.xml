@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--  RoundImageView   start-->
+    <attr name="cornerRadius" format="dimension" />
+    <attr name="border" format="dimension" />
+    <attr name="borderColor" format="color"/>
+    <attr name="imageType">
+        <enum name="circle_image" value="0" />
+        <enum name="corner_image" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="border" />
+        <attr name="borderColor"/>
+        <attr name="cornerRadius" />
+        <attr name="imageType" />
+    </declare-styleable>
+    <!--  RoundImageView   end -->
+</resources>
